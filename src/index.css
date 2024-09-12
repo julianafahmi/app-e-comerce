@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.row{
+    @apply flex flex-wrap 
+}
+.product:hover{
+    transition: all 1s;
+    box-shadow: 2px;
+    border: solid 1px green;
+}
+
+.product .btn{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.btn{
+    @apply p-2 bg-green-500 text-white  w-full rounded-md mt-5;
+}
